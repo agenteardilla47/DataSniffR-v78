@@ -1,0 +1,56 @@
+diff --git a/datasniffr/requirements.txt b/datasniffr/requirements.txt
+--- a/datasniffr/requirements.txt
++++ b/datasniffr/requirements.txt
+@@ -0,0 +1,52 @@
++# DataSniffR Python Dependencies
++# Core Odoo requirements are assumed to be already installed
++
++# Email and communication
++email-validator>=1.1.0
++
++# Data processing and analysis
++pandas>=1.3.0
++numpy>=1.21.0
++
++# Date and time handling
++python-dateutil>=2.8.0
++
++# Regular expressions (enhanced)
++regex>=2021.4.4
++
++# JSON handling (enhanced)
++ujson>=4.0.0
++
++# Logging and monitoring
++structlog>=21.1.0
++
++# Performance optimization
++cachetools>=4.2.0
++
++# AI and machine learning (lightweight)
++scikit-learn>=1.0.0
++
++# Web scraping for validation (optional)
++requests>=2.25.0
++
++# Phone number validation
++phonenumbers>=8.12.0
++
++# URL validation
++validators>=0.18.0
++
++# Text processing
++nltk>=3.6.0
++
++# Color processing for UI
++colorama>=0.4.0
++
++# Development and testing
++pytest>=6.2.0
++pytest-cov>=2.12.0
++black>=21.5.0
++flake8>=3.9.0
++
++# Documentation
++sphinx>=4.0.0
++sphinx-rtd-theme>=0.5.0
