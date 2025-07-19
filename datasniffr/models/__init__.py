@@ -5,3 +5,4 @@ from . import employee_analytics_dashboard
 from . import human_ai_merger
 from . import live_data_guardian
 from . import natural_language_interface
+from . import company_vibe_analyzer
