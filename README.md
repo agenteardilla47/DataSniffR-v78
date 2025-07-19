@@ -83,7 +83,7 @@ sudo systemctl restart odoo
 
 ### Development Setup
 ```bash
-git clone https://github.com/yourusername/datasniffr.git
+git clone https://github.com/agenteardilla47/DataSniffR-v78.git
 cd datasniffr
 pip3 install -r requirements.txt
 ln -s $(pwd) /opt/odoo/addons/datasniffr
