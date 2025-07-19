@@ -1,0 +1,34 @@
+diff --git a/datasniffr/security/ir.model.access.csv b/datasniffr/security/ir.model.access.csv
+--- a/datasniffr/security/ir.model.access.csv
++++ b/datasniffr/security/ir.model.access.csv
+@@ -1,14 +1,16 @@
+-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+-access_data_quality_log_all,data.quality.log,model_data_quality_log,,1,1,1,1
+-access_data_quality_config_all,data.quality.config,model_data_quality_config,,1,1,1,1
+-access_data_quality_settings_all,data.quality.settings,model_data_quality_settings,,1,1,1,0
+-access_data_quality_player_all,data.quality.player,model_data_quality_player,,1,1,1,0
+-access_data_quality_boss_all,data.quality.boss,model_data_quality_boss,,1,1,1,0
+-access_data_quality_achievement_all,data.quality.achievement,model_data_quality_achievement,,1,1,1,0
+-access_data_quality_guild_all,data.quality.guild,model_data_quality_guild,,1,1,1,0
+-access_data_quality_event_all,data.quality.event,model_data_quality_event,,1,1,1,0
+-access_data_quality_leaderboard_all,data.quality.leaderboard,model_data_quality_leaderboard,,1,0,0,0
+-access_data_quality_powerup_all,data.quality.powerup,model_data_quality_powerup,,1,1,1,0
+-access_data_quality_ai_all,data.quality.ai,model_data_quality_ai,,1,1,1,0
+-access_comprehensive_scanner_all,data.quality.comprehensive.scanner,model_data_quality_comprehensive_scanner,,1,1,1,0
+-access_data_quality_recommendation_all,data.quality.recommendation,model_data_quality_recommendation,,1,1,1,1
++id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
++access_data_quality_log_all,data.quality.log,model_data_quality_log,,1,1,1,1
++access_data_quality_config_all,data.quality.config,model_data_quality_config,,1,1,1,1
++access_data_quality_settings_all,data.quality.settings,model_data_quality_settings,,1,1,1,0
++access_data_quality_player_all,data.quality.player,model_data_quality_player,,1,1,1,0
++access_data_quality_boss_all,data.quality.boss,model_data_quality_boss,,1,1,1,0
++access_data_quality_achievement_all,data.quality.achievement,model_data_quality_achievement,,1,1,1,0
++access_data_quality_guild_all,data.quality.guild,model_data_quality_guild,,1,1,1,0
++access_data_quality_event_all,data.quality.event,model_data_quality_event,,1,1,1,0
++access_data_quality_leaderboard_all,data.quality.leaderboard,model_data_quality_leaderboard,,1,0,0,0
++access_data_quality_powerup_all,data.quality.powerup,model_data_quality_powerup,,1,1,1,0
++access_data_quality_ai_all,data.quality.ai,model_data_quality_ai,,1,1,1,0
++access_comprehensive_scanner_all,data.quality.comprehensive.scanner,model_data_quality_comprehensive_scanner,,1,1,1,0
++access_data_quality_recommendation_all,data.quality.recommendation,model_data_quality_recommendation,,1,1,1,1
++access_human_ai_merger_all,human.ai.merger,model_human_ai_merger,,1,1,1,1
++access_human_ai_merger_session_all,human.ai.merger.session,model_human_ai_merger_session,,1,1,1,1
