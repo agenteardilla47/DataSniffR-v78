@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- DataSniffR Daily Scan Cron Job -->
+        <record id="ir_cron_datasniffr_daily_scan" model="ir.cron">
+            <field name="name">DataSniffR Daily Quality Scan</field>
+            <field name="model_id" ref="model_datasniffr_data_quality_log"/>
+            <field name="state">code</field>
+            <field name="code">model.run_daily_scan()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="active" eval="True"/>
+            <field name="nextcall" eval="DateTime.now().replace(hour=17, minute=59, second=0)"/>
+        </record>
+
+        <!-- DataSniffR Boss Battle Check -->
+        <record id="ir_cron_datasniffr_boss_check" model="ir.cron">
+            <field name="name">DataSniffR Boss Battle Monitor</field>
+            <field name="model_id" ref="model_datasniffr_gamification"/>
+            <field name="state">code</field>
+            <field name="code">model.check_for_boss_battles()</field>
+            <field name="interval_number">30</field>
+            <field name="interval_type">minutes</field>
+            <field name="numbercall">-1</field>
+            <field name="active" eval="True"/>
+        </record>
+    </data>
+</odoo>
