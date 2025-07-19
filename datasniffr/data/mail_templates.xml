@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Sassy User Email Template -->
+        <record id="email_template_sassy_user" model="mail.template">
+            <field name="name">DataSniffR Sassy User Notification</field>
+            <field name="model_id" ref="base.model_res_users"/>
+            <field name="subject">🐶 DataSniffR Found Some "Interesting" Data Choices...</field>
+            <field name="body_html"><![CDATA[
+<div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; text-align: center; border-radius: 10px 10px 0 0;">
+        <h1 style="color: white; margin: 0;">🐶 DataSniffR Alert!</h1>
+        <p style="color: white; margin: 5px 0;">Your friendly data quality guardian</p>
+    </div>
+    
+    <div style="background: white; padding: 20px; border: 1px solid #ddd; border-radius: 0 0 10px 10px;">
+        <p>Hey ${object.name}! 👋</p>
+        
+        <p>I've been sniffing around your data (as dogs do), and found some... <em>creative</em> entries that might need a second look! 🕵️‍♂️</p>
+        
+        <div style="background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 15px 0;">
+            <h3 style="color: #495057; margin-top: 0;">🎯 Issues Found:</h3>
+            <ul style="color: #6c757d;">
+                <li>Customer name "asdfgh" - keyboard warm-up? 🎹</li>
+                <li>Email "test@" - forgot the .com? 📧</li>
+                <li>Phone number "123" - a bit short, don't you think? 📱</li>
+            </ul>
+        </div>
+        
+        <div style="background: #e7f3ff; padding: 15px; border-radius: 5px; margin: 15px 0;">
+            <h3 style="color: #0066cc; margin-top: 0;">💡 Quick Fixes:</h3>
+            <ul style="color: #0066cc;">
+                <li>Use real customer names (I know, revolutionary idea! 😉)</li>
+                <li>Complete email addresses work better</li>
+                <li>Phone numbers usually have more than 3 digits</li>
+            </ul>
+        </div>
+        
+        <p style="color: #28a745; font-weight: bold;">🌟 Your Data Quality Score: 85% (Pretty good, human!)</p>
+        
+        <div style="text-align: center; margin: 20px 0;">
+            <a href="/web#action=datasniffr.action_data_quality_dashboard" 
+               style="background: #28a745; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; display: inline-block;">
+                🎮 Check Your Progress
+            </a>
+        </div>
+        
+        <p style="font-size: 12px; color: #6c757d; text-align: center;">
+            Remember: I'm here to help, not judge! (Much.) 🐕<br>
+            Keep up the good work! - Your AI Buddy
+        </p>
+    </div>
+</div>
+            ]]></field>
+        </record>
+
+        <!-- Professional Manager Email Template -->
+        <record id="email_template_manager_report" model="mail.template">
+            <field name="name">DataSniffR Manager Report</field>
+            <field name="model_id" ref="base.model_res_users"/>
+            <field name="subject">📊 DataSniffR Weekly Team Report - Data Quality Insights</field>
+            <field name="body_html"><![CDATA[
+<div style="font-family: Arial, sans-serif; max-width: 700px; margin: 0 auto;">
+    <div style="background: #2c3e50; padding: 20px; text-align: center; border-radius: 10px 10px 0 0;">
+        <h1 style="color: white; margin: 0;">📊 DataSniffR Team Report</h1>
+        <p style="color: #ecf0f1; margin: 5px 0;">Weekly Data Quality Analytics</p>
+    </div>
+    
+    <div style="background: white; padding: 25px; border: 1px solid #ddd; border-radius: 0 0 10px 10px;">
+        <p>Dear ${object.name},</p>
+        
+        <p>Here's your team's data quality performance summary for this week:</p>
+        
+        <div style="display: flex; justify-content: space-between; margin: 20px 0;">
+            <div style="background: #e8f5e8; padding: 15px; border-radius: 8px; text-align: center; width: 30%;">
+                <h3 style="color: #27ae60; margin: 0;">92%</h3>
+                <p style="color: #27ae60; margin: 5px 0; font-size: 14px;">Overall Accuracy</p>
+            </div>
+            <div style="background: #fff3cd; padding: 15px; border-radius: 8px; text-align: center; width: 30%;">
+                <h3 style="color: #856404; margin: 0;">47</h3>
+                <p style="color: #856404; margin: 5px 0; font-size: 14px;">Issues Resolved</p>
+            </div>
+            <div style="background: #d1ecf1; padding: 15px; border-radius: 8px; text-align: center; width: 30%;">
+                <h3 style="color: #0c5460; margin: 0;">+8%</h3>
+                <p style="color: #0c5460; margin: 5px 0; font-size: 14px;">Improvement</p>
+            </div>
+        </div>
+        
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h3 style="color: #495057; margin-top: 0;">👥 Team Performance Highlights:</h3>
+            <ul style="color: #6c757d; line-height: 1.6;">
+                <li><strong>Sarah Johnson:</strong> 98% accuracy - Excellent work on customer data</li>
+                <li><strong>Mike Chen:</strong> 89% accuracy - Improved significantly in email formatting</li>
+                <li><strong>Lisa Rodriguez:</strong> 94% accuracy - Consistent performance across all modules</li>
+            </ul>
+        </div>
+        
+        <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h3 style="color: #856404; margin-top: 0;">⚠️ Areas for Improvement:</h3>
+            <ul style="color: #856404; line-height: 1.6;">
+                <li>Phone number formatting in CRM module</li>
+                <li>Product descriptions in inventory</li>
+                <li>Customer address completeness</li>
+            </ul>
+        </div>
+        
+        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h3 style="color: #155724; margin-top: 0;">💡 Recommendations:</h3>
+            <ul style="color: #155724; line-height: 1.6;">
+                <li>Schedule brief training session on phone number standards</li>
+                <li>Implement product description templates</li>
+                <li>Enable address validation in customer forms</li>
+            </ul>
+        </div>
+        
+        <div style="text-align: center; margin: 25px 0;">
+            <a href="/web#action=datasniffr.action_manager_dashboard" 
+               style="background: #007bff; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; display: inline-block; margin-right: 10px;">
+                📈 View Full Dashboard
+            </a>
+            <a href="/web#action=datasniffr.action_team_analytics" 
+               style="background: #28a745; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; display: inline-block;">
+                👥 Team Analytics
+            </a>
+        </div>
+        
+        <p style="font-size: 12px; color: #6c757d; text-align: center; margin-top: 30px;">
+            This report is generated automatically by DataSniffR AI.<br>
+            For questions or support, contact your system administrator.
+        </p>
+    </div>
+</div>
+            ]]></field>
+        </record>
+
+        <!-- Boss Battle Alert Template -->
+        <record id="email_template_boss_battle" model="mail.template">
+            <field name="name">DataSniffR Boss Battle Alert</field>
+            <field name="model_id" ref="base.model_res_users"/>
+            <field name="subject">🐉 BOSS BATTLE ALERT! Data Quality Emergency!</field>
+            <field name="body_html"><![CDATA[
+<div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+    <div style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%); padding: 20px; text-align: center; border-radius: 10px 10px 0 0; animation: pulse 2s infinite;">
+        <h1 style="color: white; margin: 0; font-size: 28px;">🐉 BOSS BATTLE!</h1>
+        <p style="color: white; margin: 5px 0; font-size: 16px;">Count Null-acula has appeared!</p>
+    </div>
+    
+    <div style="background: white; padding: 20px; border: 1px solid #ddd; border-radius: 0 0 10px 10px;">
+        <div style="text-align: center; margin: 20px 0;">
+            <div style="font-size: 48px;">🧛‍♂️</div>
+            <h2 style="color: #c0392b; margin: 10px 0;">BOSS SPAWNED!</h2>
+        </div>
+        
+        <div style="background: #ffebee; padding: 15px; border-radius: 5px; border-left: 4px solid #f44336; margin: 15px 0;">
+            <p style="color: #c62828; font-weight: bold; margin: 0;">⚠️ CRITICAL DATA QUALITY ALERT</p>
+            <p style="color: #c62828; margin: 5px 0;">Data quality has dropped below 75%! A boss battle has been triggered!</p>
+        </div>
+        
+        <div style="background: #f3e5f5; padding: 15px; border-radius: 5px; margin: 15px 0;">
+            <h3 style="color: #7b1fa2; margin-top: 0;">🎮 Boss Stats:</h3>
+            <ul style="color: #7b1fa2;">
+                <li><strong>Name:</strong> Count Null-acula</li>
+                <li><strong>HP:</strong> 850/1000</li>
+                <li><strong>Weakness:</strong> Clean data entries</li>
+                <li><strong>Special Attack:</strong> Null Corruption</li>
+            </ul>
+        </div>
+        
+        <div style="background: #e8f5e8; padding: 15px; border-radius: 5px; margin: 15px 0;">
+            <h3 style="color: #2e7d32; margin-top: 0;">⚔️ How to Defeat the Boss:</h3>
+            <ol style="color: #2e7d32;">
+                <li>Team up with your colleagues</li>
+                <li>Fix data quality issues to deal damage</li>
+                <li>Each fixed issue = 50 damage points</li>
+                <li>Defeat the boss to unlock team rewards!</li>
+            </ol>
+        </div>
+        
+        <div style="text-align: center; margin: 20px 0;">
+            <a href="/web#action=datasniffr.action_boss_battle" 
+               style="background: #d32f2f; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold; font-size: 16px;">
+                ⚔️ JOIN THE BATTLE!
+            </a>
+        </div>
+        
+        <p style="color: #666; text-align: center; font-style: italic;">
+            "The fate of clean data rests in your hands!"<br>
+            - DataSniffR Battle System
+        </p>
+    </div>
+</div>
+            ]]></field>
+        </record>
+    </data>
+</odoo>
