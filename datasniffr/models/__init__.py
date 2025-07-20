@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # DataSniffR Models - The $33 Singularity! 🐶💾
 # Dancing through the entire Odoo universe! 💃🕺
 from . import datasniffr_pocketflow_engine
@@ -16,4 +14,4 @@ from . import responsive_dashboard
 from . import ai_workflow_orchestrator
 from . import smart_content_guardian
 from . import datasniffr_licensing_system
->>>>>>> 23f8d8d (Add licensing system, pricing guide, and enterprise license model)
+from . import employee_learning_system
