@@ -10,3 +10,6 @@ from . import company_vibe_analyzer
 from . import universal_odoo_scanner
 from . import boss_battle_task_distributor
 from . import external_ai_connector
+from . import responsive_dashboard
+from . import ai_workflow_orchestrator
+from . import smart_content_guardian
