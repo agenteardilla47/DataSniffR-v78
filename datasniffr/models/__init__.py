@@ -8,3 +8,4 @@ from . import live_data_guardian
 from . import natural_language_interface
 from . import company_vibe_analyzer
 from . import universal_odoo_scanner
+from . import boss_battle_task_distributor
